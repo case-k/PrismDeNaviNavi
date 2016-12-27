@@ -1,5 +1,6 @@
 ﻿using Prism.Unity;
 using PrismDeNaviNavi.Views;
+using Xamarin.Forms;
 
 namespace PrismDeNaviNavi
 {
@@ -11,12 +12,17 @@ namespace PrismDeNaviNavi
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("MainPage?title=Hello%20from%20Xamarin.Forms");
+            NavigationService.NavigateAsync("MainPage");
         }
 
         protected override void RegisterTypes()
         {
+            Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<Page1>();
+            Container.RegisterTypeForNavigation<Page2>();
+            Container.RegisterTypeForNavigation<SubPage1>();
+            Container.RegisterTypeForNavigation<SubPage2>();
         }
     }
 }

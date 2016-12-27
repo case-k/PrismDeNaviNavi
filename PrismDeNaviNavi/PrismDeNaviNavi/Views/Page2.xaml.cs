@@ -2,9 +2,9 @@
 
 namespace PrismDeNaviNavi.Views
 {
-    public partial class MainPage : TabbedPage
+    public partial class Page2 : ContentPage
     {
-        public MainPage()
+        public Page2()
         {
             InitializeComponent();
         }
