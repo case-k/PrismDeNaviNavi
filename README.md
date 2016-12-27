@@ -1,0 +1,5 @@
+# PrismDeNaviNavi
+Xamarin.FormsのNavigationPageを使い回してみた
+
+prismのコンテナに登録したNavigationPageをふたつのページで使い回してみたけど  
+うまいことインジェクションしてくれているのか普通に動いた
